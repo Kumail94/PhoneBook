@@ -1,0 +1,10 @@
+button {
+    background-color: #f33155;
+    border: 5px solid #f33155;
+    color: #ffff;
+    margin: 10px;
+}
+
+input {
+    margin: 5px;
+}
