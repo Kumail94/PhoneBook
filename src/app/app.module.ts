@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './modules/auth/auth.module';
 import { ContactsModule } from './modules/contacts/contacts.module';
 import { ContactsService } from './services/conatcts.service';
-import { SubmitContactsModule } from './modules/submit-contacts/submit-contacts.module';
 
 
 
@@ -22,7 +21,7 @@ import { SubmitContactsModule } from './modules/submit-contacts/submit-contacts.
     
     AuthModule,
     ContactsModule,
-    SubmitContactsModule
+   
   ],
   providers: [ContactsService],
   bootstrap: [AppComponent]

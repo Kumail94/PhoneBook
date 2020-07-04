@@ -29,19 +29,16 @@ export class ContactsBookComponent implements OnInit {
     let allContacts = this.contactsService.getAllContacts();
     console.log("All Contacts = " ,allContacts);
   }
-  EditContacts(index:number) {
+  onEditContacts(index:number) {
     this.contactsService.editedContactsIndex.next(index);
-    this._router.navigate(['contacts']);
+    //this._router.navigate(['contacts']);
 
   }
-  DeleteContacts() {
+  onDeleteContacts() {
     this.contactsService.deleteContacts(this.id);
   }
-  AddContacts() {
-    this._router.navigate(['contacts']);
-  }
+ 
   onLogout(){
     this._router.navigate(['auth']);
   }
-
 }

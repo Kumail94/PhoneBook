@@ -48,14 +48,13 @@ export class SubmitContactsComponent implements OnInit {
     const data = new PhoneContacts(name, contact);
     if (this.isUpdate) {
       this._contactService.editContacts(this.editIndex, data);
-      this._router.navigate(['ContactDetails']);
+     
     } else {
       this._contactService.addContacts(data);
-      this._router.navigate(['ContactDetails']);
+      
       this.isUpdate = false;
     }
-
-
+      this.slForm.resetForm();
   }
 
 }

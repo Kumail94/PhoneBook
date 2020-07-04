@@ -1,10 +1,17 @@
 <div class="row">
     <div class="col-sm-12">
         <button class="btn btn-secondary" style="float: right;" (click)="onLogout()">Logout</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <app-submit-contacts></app-submit-contacts>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7">
+
         <h1 class="text-center">Contact Details</h1>
         <br>
-        <button type="button" class="btn btn-info btn-lg glyphicon glyphicon-plus" (click)="AddContacts()" style="float:left"></button>
-
         <table class="table table-striped table-sm table-hover">
             <thead>
                 <tr>
@@ -22,11 +29,11 @@
                     <td>{{contact.Contact}}</td>
                     <td>
 
-                        <button type="button" class="btn btn-warning btn-lg glyphicon glyphicon-pencil" (click)="EditContacts(i)"></button>
+                        <button type="button" class="btn btn-warning btn-lg glyphicon glyphicon-pencil" (click)="onEditContacts(i)"></button>
                     </td>
                     <td>
 
-                        <button type="button" class="btn btn-danger btn-lg glyphicon glyphicon-trash" (click)="DeleteContacts()"></button>
+                        <button type="button" class="btn btn-danger btn-lg glyphicon glyphicon-trash" (click)="onDeleteContacts()"></button>
                     </td>
                     <td>
 

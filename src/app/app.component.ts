@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,12 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements  OnInit {
-  title = 'AngularApp';
+  title = 'Phone Book';
 
-  constructor(){}
+  constructor(private _router : Router){}
   ngOnInit(){
     
   }
+ 
+
 }

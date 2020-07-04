@@ -8,11 +8,11 @@ import { SubmitContactsComponent } from 'src/app/contacts-book/submit-contacts/s
 
 @NgModule({
   declarations: [
-   SubmitContactsComponent
+  //  SubmitContactsComponent
   ],
   imports: [
-    CommonModule,
-    FormsModule
+    // CommonModule,
+    // FormsModule
   ]
 })
 export class SubmitContactsModule { }
