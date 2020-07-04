@@ -23,7 +23,7 @@ export class SubmitContactsComponent implements OnInit {
     console.log("Submit OnInit");
     this._contactService.editedContactsIndex.subscribe((index: number) => {
       this.editIndex = index;
-      this.isUpdate = true;
+     
       this.updatedContacts = this._contactService.getContactDetail(index);
       console.log("Updated Contacts = ", this.updatedContacts);
       setTimeout(() => {
@@ -31,9 +31,11 @@ export class SubmitContactsComponent implements OnInit {
           Name: this.updatedContacts.Name,
           Contact: this.updatedContacts.Contact
         });
+        console.log("Sl Form : ", this.slForm.value);
       });
-      console.log("Sl Form : ", this.slForm.value);
+      this.isUpdate = true;
     })
+  
   }
   onSubmit(form: NgForm) {
     if (!form.valid) {

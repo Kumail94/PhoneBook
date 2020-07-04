@@ -12,8 +12,7 @@ import { SubmitContactsComponent } from 'src/app/contacts-book/submit-contacts/s
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule
+    FormsModule
   ]
 })
 export class SubmitContactsModule { }

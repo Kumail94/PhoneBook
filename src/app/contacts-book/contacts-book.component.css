@@ -1,9 +1,4 @@
-button {
-    background-color: #f33155;
-    border: 1px solid #f33155;
-    color: #ffff;
-}
-
 th {
+    text-align: center;
     font-size: 25px;
 }

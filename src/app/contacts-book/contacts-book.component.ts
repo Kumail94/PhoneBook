@@ -40,6 +40,8 @@ export class ContactsBookComponent implements OnInit {
   AddContacts() {
     this._router.navigate(['contacts']);
   }
-
+  onLogout(){
+    this._router.navigate(['auth']);
+  }
 
 }
